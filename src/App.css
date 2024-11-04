@@ -1,38 +1,98 @@
+/* General Layout */
 .App {
+  max-width: 100%; /* Adjust to fit wider content */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #863a90;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 20px;
+  color: #863a90;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Flexbox container for side-by-side layout */
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start; 
+  position: fixed; 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Left section: Add contact form */
+.add-contact-section {
+  flex: 1; /* Takes up equal space */
+  margin-right: 100px; /* Adds space between form and list */
+  max-width: 600px;
+}
+
+/* Right section: Contact list */
+.contact-list-section {
+  flex: 1; /* Takes up equal space */
+}
+
+/* Form Styling */
+form {
+  background-color: #eee2f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  padding-right: 40px;
+  margin-top: 80px;
+  margin-left: 30px;
+  box-shadow: 20px 20px 60px 10px rgb(209, 191, 235) inset;
+  width: 400px;
+}
+
+form h2 {
+  margin-bottom: 15px;
+  color: #863a90;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e8beef;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+  background-color: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #c51ceb;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #863a90;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #590b6d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+

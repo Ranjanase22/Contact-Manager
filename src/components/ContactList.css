@@ -1,0 +1,79 @@
+/* ContactList.css */
+table {
+    width: 800px; /* Set a fixed width for the table */
+    margin: 10px 0; /* Center the table with auto margins */
+    margin-right: 20px;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    table-layout: fixed; /* Ensures the widths are respected */
+}
+
+th, td {
+    padding: 12px 15px; /* Maintain padding */
+    border-bottom: 1px solid #dc5fe7;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide overflow if the text is too long */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
+}
+
+th {
+    background-color: #ccb0b0;
+    box-shadow: 20px 20px 60px 10px rgb(227, 212, 249) inset;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Adjust column widths */
+th:nth-child(1), td:nth-child(1) { /* Serial No */
+    width: 10%; 
+    color: #863a90;
+}
+
+th:nth-child(2), td:nth-child(2) { /* Name */
+    width: 25%; 
+    color: #863a90;
+}
+
+th:nth-child(3), td:nth-child(3) { /* Email */
+    width: 35%; 
+    color: #863a90;
+}
+
+th:nth-child(4), td:nth-child(4) { /* Phone */
+    width: 20%; 
+    color: #863a90;
+}
+
+th:nth-child(5), td:nth-child(5) { /* Actions (Delete Button) */
+    width: 20%; /* Decreased width for other columns to give more space for Actions */
+    color: #863a90;
+    text-align: center; /* Center align the Actions column */
+}
+
+.App {
+    max-width: 600px; /* Keep the App max width */
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    width: 100%; 
+}
+
+
+
+
+.action-button {
+    background: none; /* No background for the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-right: 5px; /* Add space between buttons */
+    color: white; /* Set color of the dustbin symbol to white */
+    font-size: 20px; /* Set a size for better visibility */
+    transition: color 0.2s; /* Smooth color change */
+}
+
+
+
+  
